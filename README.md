@@ -45,4 +45,5 @@ Nous utilisons les données officielles disponibles sur le site de la sncf 'ress
 En mettant sur une carte les fréquentations des différentes gares, nous avons remarqué que la totalité de la France métropolitaine est deservi par la sncf, cependant il y a une forte concentrations de gares et de voyageurs en Ile de France. L'histogramme nous a fait remarqué que la gare du nord est la plus fréquentée et de loin, avec 226 millions de voyageurs en 2023 comparée à St lazare qui arrive en 2eme position avec 110 millions. Cette domination existe depuis des années. La conclusion que l'on tire est que les gares SNCF ont globalement la meme fréquentation chaque année, exeptée en 2020 ou la fréquentation de toutes les gares a baissé drastiquement, ceci est probablement à dûe au confinement.
 
 ## Copyrights
-Nous déclarons sur l’honneur que le code fourni a été produit par nous même, Keveen BOUENDJA & Florian BOZEL . 
+Certaines parties des docstrings, ainsi que des extraits de code, ont été générées avec l'aide de ChatGPT, un modèle de langage développé par OpenAI. L'utilisation de cet outil a permis de gagner du temps et d'optimiser la clarté du contenu.
+Néanmoins, nous déclarons sur l’honneur que la grande majorité du code a été conçu et écrit par nous même, Keveen BOUENDJA & Florian BOZEL . 
