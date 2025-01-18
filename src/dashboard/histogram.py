@@ -1,8 +1,8 @@
+# coding: iso-8859-1 -*-
 import plotly.express as px
 import pandas as pd
-from get_data import prepare_frequentation_bins
+from src.utils.get_data import prepare_frequentation_bins
 
-# Callback pour mettre à jour le graphique principal
 def update_main_graph(year):
     df_prepared = prepare_frequentation_bins(year)
     grouped_data = df_prepared["Tranche de fréquentation"].value_counts().sort_index()
@@ -15,7 +15,6 @@ def update_main_graph(year):
     )
     return fig
 
-# Callback pour afficher les détails des gares
 def update_detail_graph(click_data, year):
     df_prepared = prepare_frequentation_bins(year)
     if click_data is None:

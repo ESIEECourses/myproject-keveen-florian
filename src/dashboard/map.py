@@ -1,11 +1,11 @@
+# coding: iso-8859-1 -*-
 import folium
 from folium.plugins import MarkerCluster, HeatMap
 import pandas as pd
-from get_data import load_data
+from src.utils.get_data import load_data
 
-# Fonction pour générer la carte
 def update_map(year):
-    df, cdf = load_data()  # Charger les données
+    df, cdf = load_data() 
     m = folium.Map(location=[46.603354, 1.888334], zoom_start=6)
 
     df[f'Total Voyageurs + Non voyageurs {year}'] = pd.to_numeric(df[f'Total Voyageurs + Non voyageurs {year}'], errors='coerce')
