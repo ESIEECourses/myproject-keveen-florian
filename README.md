@@ -50,7 +50,7 @@ Les données utilisées proviennent des sources officielles de la SNCF :
 
 ### Conclusions générales : 
 La SNCF joue un rôle clé dans le transport à travers toute la France, avec une forte dominance de l'Île-de-France.
-L'écart du nombre de voyageurs entre les gares est très grand, il y a certaines gares qui ont seulement des milliers de voyageurs par an tandis que d'autres en n'ont des millions, comme la Gare du Nord.  
+L'écart du nombre de voyageurs entre les gares est très grand, il y a certaines gares qui enregistrent seulement des milliers de voyageurs par an tandis que d'autres des millions, comme la Gare du Nord.  
 Les fluctuations exceptionnelles de 2020 rappellent la vulnérabilité des transports publics face aux crises globales, mais aussi leur capacité à retrouver des niveaux de fréquentation élevés en période de normalité.
 
 ## Copyrights
