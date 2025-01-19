@@ -41,14 +41,14 @@ Nous utilisons les données officielles disponibles sur le site de la sncf 'ress
 - Pour changer les tranches de fréquentation, il suffit de modifier les variables `BINS` et `LABELS` dans le fichier config.py.
 
 ## Rapport d'analyse
-- Répartition des gares et des voyageurs
+- Répartition des gares et des voyageurs.
 En cartographiant la fréquentation des différentes gares, nous avons constaté que la SNCF couvre l'ensemble de la France métropolitaine. Cependant, l'analyse révèle une forte concentration de gares et de voyageurs en Île-de-France. Cette région, en raison de sa densité de population et de son activité économique, représente une part significative du trafic ferroviaire national.
 
-- Analyse des gares les plus fréquentées
+- Analyse des gares les plus fréquentées.
 L'histogramme de fréquentation des gares a mis en évidence que la Gare du Nord est de loin la plus fréquentée, avec 226 millions de voyageurs en 2023. Elle dépasse largement la Gare Saint-Lazare, qui se positionne en deuxième place avec 110 millions de voyageurs. Cette domination de la Gare du Nord n'est pas un phénomène récent, mais une tendance stable observée depuis plusieurs années.
 
-- Évolution de la fréquentation dans le temps
-L'analyse des données historiques montre que la fréquentation des gares SNCF reste globalement stable d'une année à l'autre. Une exception notable est l'année 2020, où la fréquentation a chuté drastiquement dans toutes les gares, conséquence directe des confinements liés à la pandémie de COVID-19. Cette baisse sans précédent illustre l'impact significatif des restrictions sanitaires sur la mobilité des voyageurs.
+- Évolution de la fréquentation dans le temps.
+  L'analyse des données historiques montre que la fréquentation des gares SNCF reste globalement stable d'une année à l'autre. Une exception notable est l'année 2020, où la fréquentation a chuté drastiquement dans toutes les gares, conséquence directe des confinements liés à la pandémie de COVID-19. Cette baisse sans précédent illustre l'impact significatif des restrictions sanitaires sur la mobilité des voyageurs.
 
 - Conclusions générales
 La SNCF joue un rôle clé dans le transport à travers toute la France, avec une forte dominance de l'Île-de-France.
