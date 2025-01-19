@@ -17,7 +17,7 @@ app.layout = html.Div(style={
         'min-height': '100vh',
     }, children=[
     html.H1("Dashboard sur la fréquentation des gares SNCF", style={'text-align': 'center'}),
-    html.P("Le chargement de la carte peut prendre un certain temps en raison d'un grand nombre de marqueurs. De plus, si vous rencontrez une erreur au chargement du dashboard, veuillez rafraîchir la page.", style={'text-align': 'center'}),
+    html.P("Le chargement de la carte peut prendre un certain temps en raison d'un grand nombre de marqueurs. De plus, si vous rencontrez une erreur au chargement du dashboard, veuillez rafraîchir la page.", style={'text-align': 'center', 'color': 'red'}),
 
     html.Div([
         html.Label("Sélectionnez l'année :", style={'font-weight': 'bold'}),
