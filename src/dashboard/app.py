@@ -16,10 +16,11 @@ app.layout = html.Div(style={
         'padding': '20px',
         'min-height': '100vh',
     }, children=[
-    html.H1("Dashboard sur la fréquentation des gares SNCF", style={'text-align': 'center'}),
+    html.H1("Dashboard sur la frÃ©quentation des gares SNCF", style={'text-align': 'center'}),
+    html.H2("Le chargement de la carte peut prendre un certain temps en raison d'un grand nombre de marqueurs. De plus, si vous rencontrez une erreur au chargement du dashboard, veuillez rafraÃ®chir la page.", style={'text-align': 'center'}),
 
     html.Div([
-        html.Label("Sélectionnez l'année :", style={'font-weight': 'bold'}),
+        html.Label("SÃ©lectionnez l'annÃ©e :", style={'font-weight': 'bold'}),
         dcc.Dropdown(
             id='year',
             options=[{'label': str(year), 'value': str(year)} for year in range(2015, 2024)],
@@ -45,11 +46,11 @@ app.layout = html.Div(style={
             html.Div(id='map-container', children=[
                 html.Iframe(id='map', srcDoc='', width='90%', height='600px'),  
                 html.P(
-                    f"Carte de la fréquentation des gares SNCF en France ainsi que leur position",
+                    f"Carte de la frÃ©quentation des gares SNCF en France ainsi que leur position",
                     style={'text-align': 'center', 'margin-top': '10px', 'font-size': '20px'}
                 ),
                 html.P(
-                    f"Cliquez sur les marqueurs pour afficher les détails. Cliquez sur le bouton en haut à droite de la carte pour choisir le mode de celle-ci.",
+                    f"Cliquez sur les marqueurs pour afficher les dÃ©tails. Cliquez sur le bouton en haut Ã  droite de la carte pour choisir le mode de celle-ci.",
                     style={'text-align': 'center', 'margin-top': '10px', 'font-size': '15px'}
                 ),
                 html.P(
@@ -63,41 +64,41 @@ app.layout = html.Div(style={
 
 def insert_text(year):
     """
-    Génère le texte pour le nombre total de voyageurs pour une année donnée et identifie la gare la plus fréquentée.
+    GÃ©nÃ¨re le texte pour le nombre total de voyageurs pour une annÃ©e donnÃ©e et identifie la gare la plus frÃ©quentÃ©e.
 
     Args:
-        year (str): Année pour laquelle les données doivent être calculées.
+        year (str): AnnÃ©e pour laquelle les donnÃ©es doivent Ãªtre calculÃ©es.
 
     Returns:
-        str: Texte incluant le nombre total de voyageurs et la gare la plus fréquentée.
+        str: Texte incluant le nombre total de voyageurs et la gare la plus frÃ©quentÃ©e.
     """
     df[f'Total Voyageurs + Non voyageurs {year}'] = pd.to_numeric(df[f'Total Voyageurs + Non voyageurs {year}'], errors='coerce')
     total_voyageurs = df[f'Total Voyageurs + Non voyageurs {year}'].sum()
     gare_max = df.loc[df[f'Total Voyageurs + Non voyageurs {year}'].idxmax()]
     gare_nom = gare_max['Nom de la gare']
     gare_voyageurs = gare_max[f'Total Voyageurs + Non voyageurs {year}']
-    return f"Total Voyageurs + Non voyageurs {year}: {total_voyageurs:,} | Gare la plus fréquentée : {gare_nom} ({gare_voyageurs:,} voyageurs)"
+    return f"Total Voyageurs + Non voyageurs {year}: {total_voyageurs:,} | Gare la plus frÃ©quentÃ©e : {gare_nom} ({gare_voyageurs:,} voyageurs)"
 
 
-# Mise à jour du graphique principal
+# Mise Ã  jour du graphique principal
 app.callback(
     Output('main-graph', 'figure'),
     Input('year', 'value')
 )(main_graph)
 
-# Mise à jour du graphique détaillé
+# Mise Ã  jour du graphique dÃ©taillÃ©
 app.callback(
     Output('detail-graph', 'figure'),
     [Input('main-graph', 'clickData'), Input('year', 'value')]
 )(detail_graph)
 
-# Mise à jour de la carte
+# Mise Ã  jour de la carte
 app.callback(
     Output('map', 'srcDoc'),
     Input('year', 'value')
 )(create_map)
 
-# Mise à jour du texte 
+# Mise Ã  jour du texte 
 app.callback(
     Output('text', 'children'),
     Input('year', 'value')
