@@ -1,4 +1,4 @@
-# coding: iso-8859-1 -*-
+# -*- coding: utf-8 -*-
 import pandas as pd
 from dash import Dash, dcc, html, Input, Output
 from .histogram import main_graph, detail_graph
