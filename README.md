@@ -1,7 +1,7 @@
 # Dashboard fréquentation des gares SNCF
 
 ## Objectif
-Nous souhaitions analyser la fréquentation des gares SNCF afin de savoir quelles sont les gares les plus fréquenter ainsi que les différences de fréquentation entre les différentes gares et l'évolution de cette fréquentation avec le temps.
+Nous souhaitions analyser la fréquentation des gares SNCF afin de connaitre son évolution avec le temps et les disparités de la fréquentation des différentes gares en france. 
 
 ## User guide
 1. Clonez le dépôt : $ git clone https://github.com/ESIEECourses/myproject-keveen-florian.git
