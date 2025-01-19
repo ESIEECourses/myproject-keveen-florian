@@ -4,10 +4,11 @@
 Nous souhaitions analyser la fréquentation des gares SNCF afin de savoir quelles sont les gares les plus fréquenter ainsi que les différences de fréquentation entre les différentes gares et l'évolution de cette fréquentation avec le temps.
 
 ## User guide
-1. Clonez le dépôt : `git clone https://github.com/ESIEECourses/myproject-keveen-florian.git`
-2. Installez les modules : `pip install -r requirements.txt`
-3. Exécutez l'application : `python main.py`
-4. Accédez au dashboard en ouvrant votre navigateur et en visitant http://127.0.0.1:8051/.
+1. Clonez le dépôt : $ git clone https://github.com/ESIEECourses/myproject-keveen-florian.git
+2. Se déplacer dans le dossier crée : $ cd myproject-keveen-florian
+3. Installez les modules : $ pip install -r requirements.txt
+4. Exécutez l'application : $ python main.py
+5. Accédez au dashboard en ouvrant votre navigateur et en visitant http://127.0.0.1:8051/.
 
 ## Data
 Nous utilisons les données officielles disponibles sur le site de la sncf 'ressources.data.sncf.com' : 
